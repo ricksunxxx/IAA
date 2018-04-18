@@ -1,0 +1,41 @@
+.my-infor{
+    background: #ffffff;padding: 0 16px;margin-top:20px;
+}
+.my-infor li{
+    border-bottom: 1px solid #f7f6f5;padding:16px 0;
+}
+.my-infor li span{
+    font-size:16px;
+}
+.my-infor li span:nth-of-type(1){
+    float:left;
+}
+.my-infor li span:nth-of-type(2){
+    float:right;
+}
+.my-infor li img{
+    float:right;width:50px;height: 50px;
+}
+.pic{
+    line-height: 50px;
+}
+
+.out-login{
+    padding: 16px 16px;background: #ffffff;
+    margin-top: 40px;text-align: center;
+    font-size: 16px;
+}
+// 全浏览器通用的clearfix方案【推荐】
+// 引入了zoom以支持IE6/7
+// 同时加入:before以解决现代浏览器上边距折叠的问题
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: " ";
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
+}

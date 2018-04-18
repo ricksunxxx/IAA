@@ -1,0 +1,218 @@
+.home {
+    .car-insurance {
+        position: relative;
+        width: 100%;
+        padding: 10px 10px 0 10px;
+        background: #f7f6f5;
+        img {
+            display: block;
+            width: 100%;
+            height: 240px;
+            border-radius: 4px;
+        }
+        .tips {
+            position: absolute;
+            left: 50%;
+            bottom: 4px;
+            transform: translate(-50%, 0);
+            height: 24px;
+            line-height: 24px;
+            .tips-text {
+                float: left;
+                display: block;
+                height: 100%;
+                font-size: 16px;
+                color: #ff6c2a;
+            }
+            .tips-arrow {
+                float: left;
+                position: relative;
+                display: block;
+                width: 45px;
+                height: 100%;
+                .icon {
+                    content: '';
+                    position: absolute;
+                    left: 10PX;
+                    top: 7px;
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    border-top: 2PX solid #ff6c2a;
+                    border-right: 2PX solid #ff6c2a;
+                    transform: rotate(45deg);
+                    animation: arrow-two 1.5s infinite;
+                    opacity: .7;
+                    &:first-child {
+                        opacity: 1;
+                        left: 0;
+                        animation: arrow-one 1.5s infinite;
+                    }
+                    &:last-child {
+                        opacity: .4;
+                        left: 20PX;
+                        animation: arrow-three 1.5s infinite;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hot-sale {
+    padding: 0 10px 10px;
+    margin-bottom: 50px;
+}
+
+.hot-sale-header {
+    position: relative;
+    height: 45px;
+    margin: 0 4px;
+    line-height: 45px;
+    font-size: 14px;
+    h2 {
+        color: #3b3631;
+    }
+    .hot-sale-regain {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-right: 16px;
+        color: #1c1e20;
+        &:after,
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%) rotate(45deg);
+            width: 7px;
+            height: 7px;
+            border-top: 1PX solid #3b3631;
+            border-right: 1PX solid #3b3631;
+        }
+        &:before {
+            right: 8px;
+        }
+    }
+}
+
+.hot-sale-wrap {
+    .item {
+        margin-bottom: 10px;
+        background: #fff;
+        border-radius: 2px;
+        .item-header {
+            height: 46px;
+            line-height: 46px;
+            position: relative;
+            h3 {
+                padding: 0 120px 0 18px;
+                font-size: 16px;
+                color: #353a43;
+                font-weight: 700;
+                position: relative;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 10px;
+                    top: 17px;
+                    display: block;
+                    width: 2px;
+                    height: 12px;
+                    background: #ff6c2a;
+                }
+            }
+            span {
+                position: absolute;
+                right: 12px;
+                top: 0;
+                color: #7f8592;
+                i {
+                    font-size: 20px;
+                    color: #ff6c2a;
+                    padding-right: 2px;
+                }
+            }
+        }
+        .item-wrap {
+            margin: 0 10px;
+            padding: 10px 0;
+            border-top: 1PX solid #e7e7e7;
+            overflow: hidden;
+            .item-wrap-img {
+                float: left;
+                width: 70px;
+                height: 70px;
+                margin-right: 10px;
+                border: 1PX solid #e7e7e7;
+            }
+            .item-wrap-body {
+                dd {
+                    margin: 5px 0 13px;
+                    padding-left: 10px;
+                    font-size: 12px;
+                    line-height: 12px;
+                    color: #838891;
+                    position: relative;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translate(0, -50%);
+                        display: block;
+                        width: 4px;
+                        height: 4px;
+                        border: 1PX solid #ffcea1;
+                        border-radius: 50%;
+                    }
+                }
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+@keyframes arrow-one {
+    0 {
+        opacity: 1;
+        left: 0;
+    }
+    ,
+    100% {
+        opacity: 0;
+        left: 10PX;
+    }
+}
+
+@keyframes arrow-two {
+    0 {
+        opacity: .7;
+        left: 0;
+    }
+    ,
+    100% {
+        opacity: 0;
+        left: 20PX;
+    }
+}
+
+@keyframes arrow-three {
+    0 {
+        opacity: .4;
+        left: 0;
+    }
+    ,
+    100% {
+        opacity: 0;
+        left: 30PX;
+    }
+}

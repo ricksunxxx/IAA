@@ -1,0 +1,62 @@
+.tab{
+    width:100%;height: 44px;background: #ffffff;
+}
+.tab ul li{
+    width:25%;float:left;height: 44px;font-size: 14px;
+    line-height: 44px;text-align: center;
+    
+}
+.tab ul li span{
+    display:inline-block; height: 44px;color:#353A43;
+}
+
+
+.tab ul li span.active{
+    border-bottom: 2px solid red;color:#FF6C2A;
+}
+
+
+.content .tit{
+    width:375px;height: 32px;background:#F1EFED ;
+    font-size: 14px;
+    color: #B1AEAB;position: relative;
+}
+.content .tit span{
+    position: absolute;line-height: 32px;
+}
+.content .tit span:nth-of-type(1){
+    left:18px;
+}
+.content .tit span:nth-of-type(2){
+   right:18px;
+}
+.month:not(.first){
+    margin-top: 16px;
+}
+
+.card{
+    width:355px;margin:10px auto 0;padding:0 10px 16px;background: #ffffff;
+    
+}
+
+.card .head{
+    height: 40px;border-bottom:2px solid #D8D8D8 ;    
+}
+.card .head span{
+    position: absolute;line-height: 40px;
+}
+.card .head span:nth-of-type(1){
+    left:16px;
+}
+.card .head span:nth-of-type(2){
+    right:16px;
+}
+.card .card_con ul{
+    margin:4px 0 0 6px
+}
+.card .card_con li{
+    margin-top: 8px;
+}
+
+
+

@@ -1,0 +1,12 @@
+{
+    "result":
+    {
+        "employeeCode": "RT01001_EM07",
+        "loginPhone": "13923496037",
+        "accountBalance": "200",
+        "curMonthPremium": "600.0",
+        "curMonthFee": "82.0"
+    },
+    "resultCode": "00",
+    "resultMsg": "操作成功"
+}

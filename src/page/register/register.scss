@@ -1,0 +1,302 @@
+.get_yzm {
+    position: absolute;
+    left: 219px;
+    top: 0;
+    height: 40px;
+}
+
+.get_yzm.isActive {
+    left: 185px;
+}
+
+.get_yzm span:nth-of-type(1) {
+    position: absolute;
+    display: inline-block;
+    height: 24px;
+    width: 1px;
+    top: 8px;
+    background: #DCDCDC;
+}
+
+.get_yzm span:nth-of-type(2),.get_yzm img {
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+    top: 10px;
+    vertical-align: super;
+    margin-left: 12px;
+    color: #217FED;
+}
+.get_yzm img{
+    margin-left: -4.5px;
+}
+.get_yzm span:nth-of-type(2).isActive {
+    color: #DCDCDC;
+}
+
+.login_btn {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 40px;
+    line-height: 40px;
+}
+
+.ipt {
+    height: 44px;
+    font-size: 16px;
+}
+
+.login .weui-cells {
+    margin-top: 50px;
+}
+
+.ipt {
+    font-size: 16px;
+}
+
+.vux-toast .weui-toast.weui-toast_text {
+    width: 100px !important;
+}
+
+
+
+.banner {
+    display: block;
+    width: 230px;
+    height: 172px;
+    margin-left: 145px;
+    
+}
+
+.tit_img {
+    display: block;
+    width: 150px;
+    height: 24px;
+    margin: 0 auto;
+}
+
+.login {
+    background: #ffffff;
+    height: 100%;width:100%;position: absolute;
+}
+
+.form{
+   top:200px;left:27px;
+    height: 50%;margin-top: 30px;position: absolute;
+}
+
+.ipt_wrap,
+.yzm,
+.yzm_img {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.yzm {
+    
+    position: relative;
+}
+
+.ipt {
+    display: block;
+    width: 320px;
+    height: 40px;
+    background: #f6f6f6;
+    border-radius: 25px;
+    margin: 0 auto;
+    text-indent: 50px;
+}
+
+.icon{
+    width: 20px;
+    height: 24px;
+    position: absolute;
+    left: 17px;
+    top: 8px;
+}
+.sys-icon.icon{
+    left:270px;width:26px
+}
+.get_yzm img{
+   width:80px;height: 22px; 
+}
+
+.login {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.warn_tip{
+    position: absolute;top:86px;left: 50px;color:red;
+}
+
+@-webkit-keyframes shake {
+    0%{
+        -webkit-transform:translate(4px, 0px);
+    }
+    25%{
+        -webkit-transform:translate(-4px, 0px);
+    }
+    50%{
+        -webkit-transform:translate(0px, 0px);
+    }
+    75%{
+        -webkit-transform:translate(4px, 0px);
+    }
+    100%{
+        -webkit-transform:translate(-4px, 0px);
+    }
+}
+@keyframes shake {
+    0%{
+        transform:translate(4px, 0px);
+    }
+    25%{
+        transform:translate(-4px, 0px);
+    }
+    50%{
+        transform:translate(0px, 0px);
+    }
+    75%{
+        transform:translate(4px, 0px);
+    }
+    100%{
+        transform:translate(-4px, 0px);
+    }
+}
+
+ .shake{
+     -webkit-animation:shake 0.2s ;
+     animation:shake 0.2s ;
+ }
+
+
+.breadcrumb {
+            /*centering*/
+            display: inline-block;
+            box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+            overflow: hidden;
+            border-radius: 5px;
+            /*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
+            counter-reset: flag;
+        }
+        
+        .breadcrumb a {
+            text-decoration: none;
+            outline: none;
+            display: block;
+            float: left;
+            font-size: 12px;
+            line-height: 36px;
+            color: white;
+            /*need more margin on the left of links to accomodate the numbers*/
+            padding: 0 10px 0 60px;
+            background: #666;
+            background: linear-gradient(#666, #333);
+            position: relative;
+        }
+        /*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
+        
+        .breadcrumb a:first-child {
+            padding-left: 46px;
+            border-radius: 5px 0 0 5px;
+            /*to match with the parent's radius*/
+        }
+        
+        .breadcrumb a:first-child:before {
+            left: 14px;
+        }
+        
+        .breadcrumb a:last-child {
+            border-radius: 0 5px 5px 0;
+            /*this was to prevent glitches on hover*/
+            padding-right: 20px;
+        }
+        /*hover/active styles*/
+        
+        /*.breadcrumb a.active,
+        .breadcrumb a:hover {
+            background: #333;
+            background: linear-gradient(#333, #000);
+        }*/
+        
+        /*.breadcrumb a.active:after,
+        .breadcrumb a:hover:after {
+            background: #333;
+            background: linear-gradient(135deg, #333, #000);
+        }*/
+        /*adding the arrows for the breadcrumbs using rotated pseudo elements*/
+        
+        .breadcrumb a:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -18px;
+            /*half of square's length*/
+            /*same dimension as the line-height of .breadcrumb a */
+            width: 36px;
+            height: 36px;
+            /*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's: 
+    length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
+    if diagonal required = 1; length = 1/1.414 = 0.707*/
+            transform: scale(0.707) rotate(45deg);
+            /*we need to prevent the arrows from getting buried under the next link*/
+            z-index: 1;
+            /*background same as links but the gradient will be rotated to compensate with the transform applied*/
+            background: #666;
+            background: linear-gradient(135deg, #666, #333);
+            /*stylish arrow design using box shadow*/
+            box-shadow: 2px -2px 0 2px rgba(0, 0, 0, 0.4), 3px -3px 0 2px rgba(255, 255, 255, 0.1);
+            /*
+        5px - for rounded arrows and 
+        50px - to prevent hover glitches on the border created using shadows*/
+            border-radius: 0 5px 0 50px;
+        }
+        /*we dont need an arrow after the last link*/
+        
+        .breadcrumb a:last-child:after {
+            content: none;
+        }
+        /*we will use the :before element to show numbers*/
+        
+        /*.breadcrumb a:before {
+            content: counter(flag);
+            counter-increment: flag;
+            some styles now
+            border-radius: 100%;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            margin: 8px 0;
+            position: absolute;
+            top: 0;
+            left: 30px;
+            background: #444;
+            background: linear-gradient(#444, #222);
+            font-weight: bold;
+        }*/
+        
+        .flat a,
+        .flat a:after {
+            background: white;
+            color: black;
+            transition: all 0.5s;
+        }
+        
+        .flat a:before {
+            background: white;
+            box-shadow: 0 0 0 1px #ccc;
+        }
+        
+        /*.flat a:hover,
+        .flat a.active,
+        .flat a:hover:after,
+        .flat a.active:after {
+            background: #9EEB62;
+        }*/

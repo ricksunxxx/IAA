@@ -1,0 +1,172 @@
+.account-container {
+    background: #fff url(../../assets/my_bg.png) no-repeat center top;
+    background-size: 100% 100%;
+}
+
+.my-portrait {
+    height: 50px;
+    margin: 0 16px;
+    border-bottom: 1PX solid rgba(255, 255, 255, .2);
+    line-height: 50px;
+    .portrait {
+        width: 32px;
+        height: 50px;
+        display: block;
+        float: left;
+        font-size: 0;
+        img {
+            width: 0.853333rem;
+            height: 0.853333rem; // border-radius: 50%;
+            // border: 1PX solid #c8c1c1;
+        }
+    }
+    .phone {
+        padding-left: 10px;
+        font-size: 16px;
+        color: #fff;
+    }
+}
+
+.my-account {
+    position: relative;
+    .withdrawal {
+        position: absolute;
+        right: 0;
+        top: 15px;
+        width: 60px;
+        height: 28px;
+        padding-left: 6px;
+        line-height: 28px;
+        text-align: center;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        font-size: 14px;
+        color: #ff6c2a;
+        background: #fff;
+    }
+    .balance {
+        text-align: center;
+        .balance-name {
+            font-size: 14px;
+            color: #fff;
+            padding: 16px 0 0;
+        }
+        .balance-money {
+            padding: 4px 0 22px;
+            font-size: 44px;
+            color: #fff;
+            span {
+                padding-left: 6px;
+                font-size: 14px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.fee {
+    margin-bottom: 12px;
+    position: relative;
+    padding: 8px 50px 12px;
+    background: #fff;
+    overflow: hidden;
+    .fee-block {
+        float: left;
+        width: 50%;
+        height: 100%; // padding: 27px 100px 0 28px;
+        text-align: center;
+        .fee-name {
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #838891;
+        }
+        .fee-money {
+            font-size: 16px;
+            color: #353a43;
+        }
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 8px;
+        display: block;
+        width: 1PX;
+        height: 48px;
+        background: #e7e7e7;
+    }
+}
+
+.my-order {
+    margin-bottom: 12px;
+    background: #fff;
+    h2 {
+        height: 40px;
+        line-height: 40px;
+        margin: 0 20px;
+        border-bottom: 1PX solid #e7e7e7;
+        color: #838891;
+        font-size: 14px;
+    }
+    .my-order-container {
+        ul {
+            display: flex;
+            .item {
+                text-align: center;
+                flex: 1;
+                .item-menu {
+                    padding: 12px 0 10px;
+                    font-size: 14px;
+                    color: #353a43;
+                    &:before {
+                        content: '';
+                        display: block;
+                        width: 36px;
+                        height: 36px;
+                        margin: 0 auto 6px;
+                    }
+                    &:before {
+                        background: transparent url(../../assets/accident.png) no-repeat center;
+                        background-size: contain;
+                    }
+                }
+                &:first-child .item-menu:before {
+                    background: transparent url(../../assets/car.png) no-repeat center;
+                    background-size: contain;
+                }
+                &:last-child .item-menu:before {
+                    background: transparent url(../../assets/rmb.png) no-repeat center;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+}
+
+.help-info {
+    padding: 0 19px;
+    background: #fff;
+    font-size: 14px;
+    a {
+        position: relative;
+        display: block;
+        height: 45px;
+        line-height: 45px;
+        border-bottom: 1PX solid #e7e7e7;
+        color: #838891;
+        &:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 8px;
+            height: 8px;
+            border-top: 1PX solid #d9d9d9;
+            border-right: 1PX solid #d9d9d9;
+            transform: translate(0, -50%) rotate(45deg);
+        }
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,191 @@
+.get_yzm {
+    position: absolute;
+    left: 219px;
+    top: 0;
+    height: 40px;
+//  width:135px;
+//  left: 185px;
+    
+}
+
+.get_yzm.isActive {
+    left: 185px;
+}
+
+.get_yzm span:nth-of-type(1) {
+    position: absolute;
+    display: inline-block;
+    height: 24px;
+    width: 1px;
+    top: 8px;
+    background: #DCDCDC;
+}
+
+.get_yzm span:nth-of-type(2) {
+    font-size: 14px;
+    position: relative;
+    top: 10px;
+    vertical-align: super;
+    margin-left: 12px;
+    color: #217FED;
+    cursor: pointer;
+//  width:135px;
+//  text-align: center;
+//  display: inline-block;
+//  letter-spacing: 0.2px;
+}
+
+.get_yzm span:nth-of-type(2).isActive {
+    color: #DCDCDC;
+}
+
+.login_btn {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 25px;
+    line-height: 40px;
+}
+
+.ipt {
+    height: 44px;
+    font-size: 16px;
+}
+
+.login .weui-cells {
+    margin-top: 50px;
+}
+
+.ipt {
+    font-size: 16px;
+}
+
+.vux-toast .weui-toast.weui-toast_text {
+    width: 100px !important;
+}
+
+
+
+.banner {
+    display: block;
+    width: 230px;
+    height: 172px;
+    margin-left: 145px;
+    
+}
+
+.tit_img {
+    display: block;
+    width: 150px;
+    height: 24px;
+    margin: 0 auto;
+}
+
+.login {
+    background: #ffffff;
+    height: 100%;width:100%;position: absolute;
+}
+
+.form {
+   
+    height: 50%;margin-top: 30px;position: relative;
+}
+
+.user_name,
+.yzm {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    height: 40px;
+    margin-top: 25px;
+}
+
+.yzm {
+    position: relative;
+}
+
+.ipt {
+    display: block;
+    width: 320px;
+    height: 40px;
+    background: #f6f6f6;
+    border-radius: 25px;
+    margin: 0 auto;
+    text-indent: 50px;
+}
+
+.icon {
+    width: 20px;
+    height: 24px;
+    position: absolute;
+    left: 17px;
+    top: 8px;
+}
+
+
+.login {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+body{
+    background: #ffffff;
+}
+
+.register{
+    width: 320px;margin:10px auto 0;
+}
+.register span{
+    font-size: 12px;
+}
+.register .forget{
+    margin-left:230px;font-size: 13px;color:#217FED;
+}
+.register .regist{
+    margin-left:180px;font-size: 16px;
+}
+
+.warn_tip{
+    position: absolute;top:86px;left: 80px;color:red;
+}
+
+@-webkit-keyframes shake {
+    0%{
+        -webkit-transform:translate(4px, 0px);
+    }
+    25%{
+        -webkit-transform:translate(-4px, 0px);
+    }
+    50%{
+        -webkit-transform:translate(0px, 0px);
+    }
+    75%{
+        -webkit-transform:translate(4px, 0px);
+    }
+    100%{
+        -webkit-transform:translate(-4px, 0px);
+    }
+}
+@keyframes shake {
+    0%{
+        transform:translate(4px, 0px);
+    }
+    25%{
+        transform:translate(-4px, 0px);
+    }
+    50%{
+        transform:translate(0px, 0px);
+    }
+    75%{
+        transform:translate(4px, 0px);
+    }
+    100%{
+        transform:translate(-4px, 0px);
+    }
+}
+
+ .shake{
+     -webkit-animation:shake 0.2s ;
+     animation:shake 0.2s ;
+ }

@@ -1,0 +1,2 @@
+webpackJsonp([12],{"0Uv0":function(e,t){e.exports={render:function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",{staticClass:"test"},[n("h1",[e._v(e._s(e.msg))])])},staticRenderFns:[]}},AQkf:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default={name:"test",data:function(){return{msg:"Welcome to Your Vue.js App"}}}},aDGC:function(e,t,n){var s=n("VU/8")(n("AQkf"),n("0Uv0"),null,null,null);e.exports=s.exports}});
+//# sourceMappingURL=OrderCenter.12.61accbea2f5bfb2ec9db.js.map
